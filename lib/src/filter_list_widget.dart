@@ -111,13 +111,13 @@ class _FilterListWidgetState extends State<FilterListWidget> {
     return Container(
       decoration: BoxDecoration(
         color: widget.backgroundColor,
-        boxShadow: <BoxShadow>[
+        /*boxShadow: <BoxShadow>[
           BoxShadow(
             offset: Offset(0, 5),
             blurRadius: 15,
             color: Color(0x12000000),
           )
-        ],
+        ],*/
       ),
       child: Padding(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
