@@ -262,46 +262,6 @@ class _FilterListWidgetState extends State<FilterListWidget> {
               ),
               child: Row(
                 children: <Widget>[
-                  FlatButton(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(25))),
-                    onPressed: () {
-                      setState(
-                        () {
-                          _selectedTextList = List.from(_allTextList);
-                        },
-                      );
-                    },
-                   child: Container(
-                      height: double.infinity,
-                      alignment: Alignment.center,
-                      child: Text(
-                        'All',
-                        style: Theme.of(context).textTheme.headline.copyWith(
-                            fontSize: 20, color: widget.allResetButonColor),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                  ),
-                  FlatButton(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(25))),
-                    onPressed: () {
-                      setState(() {
-                        _selectedTextList.clear();
-                      });
-                    },
-                    child: Container(
-                      height: double.infinity,
-                      alignment: Alignment.center,
-                      child: Text(
-                        'Reset',
-                        style: Theme.of(context).textTheme.headline.copyWith(
-                            fontSize: 20, color: widget.allResetButonColor),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                  ),
                   MaterialButton(
                     color: widget.applyButonTextBackgroundColor,
                     padding: EdgeInsets.only(bottom: 5),
